@@ -61,7 +61,7 @@ This will ensure that our build server has all of the packages that we need to b
 15.	Add a task to the pipeline. Search for python and choose Python Script
 ![img26](./lab/images/img26.png)
 16.	Change the name to “Train Model on Local” and choose the script path “aml_service/10-TrainOnLocal.py”
-17.	Add another Python script to the pipeline.  Change the name to Evaluate Model and the script path to “aml_service/15_EvaluateModel.py”
+17.	Add another Python script to the pipeline.  Change the name to Evaluate Model and the script path to “aml_service/15-EvaluateModel.py”
 18.	Add 4 more Python scripts to the pipeline (hint, you can click Add multiple times)
 ![img27](./lab/images/img27.png)
 19.	Fill out the remaining python scripts with following names and script path  
