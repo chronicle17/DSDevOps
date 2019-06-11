@@ -17,15 +17,17 @@
 ![img6](./lab/images/img06.png)
 4.	Enter the name of your application, and a URL.  For convenience and ease of tracking, we suggest you use you’re a unique prefix to your service principals.  The URL doesn’t have to be a real URL, you can enter http://invalid
 ![img7](./lab/images/img07.png)
-5.	Once complete, click on the Settings button for your service principal then click Keys
+5.	Once complete, click on the Certificates & Secrets button for your service principal then click Keys
 ![img8](./lab/images/img08.png)
-6.	Here we will create a password for your service principal.  Enter “accessKey” for the description, and 1 year for the expiration.  Then click Save.  Once you click save, the password will be displayed only once.  Copy the password before leaving the blade, otherwise you won’t be able to see it again.  Be sure to copy the Application ID as well, as we’ll need that later on.
+6.  Click New Client Secret
+![img8a](./lab/images/img08a.png)
+7.	Here we will create a password for your service principal.  Enter “accessKey” for the description, and 1 year for the expiration.  Then click Add.  Once you click Add, the password will be displayed only once.  Copy the password before leaving the blade, otherwise you won’t be able to see it again.  Be sure to copy the Application ID as well, as we’ll need that later on.
 ![img9](./lab/images/img09.png)
-7.	Retrieve the Tenant ID.  We’ll need this later.  On the left-hand blade, click “Properties” to show the properties of your Azure Active Directory.  Copy the Directory ID.  This is your Tenant ID.
+8.	Retrieve the Tenant ID.  We’ll need this later.  On the left-hand blade, click “Overview” to show the properties of your Azure Active Directory.  Copy the Directory (Tenant) ID.  This is your Tenant ID.
 ![img10](./lab/images/img10.png)
-8.	Now we need to give access for the Service Principal to use the AzureML Workspace.  Open the AzureML Workspace you created, click Access control (IAM) and Add a role assignment to add a user to a role.
+9.	Now we need to give access for the Service Principal to use the AzureML Workspace.  Open the AzureML Workspace you created, click Access control (IAM) and Add a role assignment to add a user to a role.
 ![img11](./lab/images/img11.png)
-9.	Choose Contributor for the role and enter the name of the service principal you created, then click save.
+10.	Choose Contributor for the role and enter the name of the service principal you created, then click save.
 ![img12](./lab/images/img12.png)
 
 ## Part 2 - Build Azure DevOps Pipeline
